@@ -21,5 +21,15 @@ describe('Binary Search', () => {
 	});
 
 	//(OPTIONAL) WRITE YOUR OWN TESTS HERE. Include >=1 edge case :)
+	it('returns true if target value is the smallest array value', () => {
+		expect(binarySearch(test1, 1)).to.equal(true);
+		expect(binarySearch(test2, -3)).to.equal(true);
+		expect(binarySearch(test3, -0.5)).to.equal(true);
+	});
 
+	it('returns true if target value is the largest array value', () =>{
+		expect(binarySearch(test1, 1000)).to.equal(true);
+		expect(binarySearch(test2, 20)).to.equal(true);
+		expect(binarySearch(test3, 5)).to.equal(true);
+	});
 });
