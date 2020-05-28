@@ -32,4 +32,9 @@ describe('Binary Search', () => {
 		expect(binarySearch(test2, 20)).to.equal(true);
 		expect(binarySearch(test3, 5)).to.equal(true);
 	});
+
+	it('returns false if array is empty', () =>{
+		expect(binarySearch([], 1)).to.equal(false);
+	});
+
 });

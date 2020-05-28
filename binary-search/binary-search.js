@@ -10,15 +10,15 @@ const binarySearch = (array, target) => {
 	}
 
 	// RECURSIVE CASE
-	if (target < array[midpoint]) {
+	if (target < array[midpoint]) { 
 		if (array[midpoint] !== array[0]) {
-			array = array.slice(0, midpoint);
-			return binarySearch(array, target);
+			array = array.slice(0, midpoint); 
+			return binarySearch(array, target); // recursion
 		}
 	} else if (target > array[midpoint]) {
 		if (array[midpoint] !== array[array.length - 1]) {
 			array = array.slice(midpoint);
-			return binarySearch(array, target);
+			return binarySearch(array, target); // recursion
 		}
 	}
 
